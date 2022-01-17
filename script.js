@@ -1,7 +1,7 @@
 function compute()
 {
     var p = document.getElementById("principal").value;
-    if(p <0 || p === null)
+    if(p <=0 || p === null)
     {
         window.alert("Please Enter Postive Number!");
     }
