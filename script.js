@@ -1,6 +1,10 @@
 function compute()
 {
     var p = document.getElementById("principal").value;
+    if(p <0 || p === null)
+    {
+        window.alert("Please Enter Postive Number!");
+    }
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var intr = p *years* (rate/100);
